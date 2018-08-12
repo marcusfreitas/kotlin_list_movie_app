@@ -18,6 +18,7 @@ class HomeAdapter(private val movies: List<Movie>) : RecyclerView.Adapter<HomeAd
     }
 
     var listener: OnItemClickListener? = null
+    private var isLoadingAdded: Boolean = false
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
